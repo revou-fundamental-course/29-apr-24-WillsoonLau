@@ -48,6 +48,36 @@ body{
 .navigation-container>nav>#button-call-us{
     border-radius:0px 4px 4px 0px;
 }
+.core-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.next-button {
+    border-color: white;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+.prev-button {
+    border-color: white;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+.prev-button:hover{
+    background-color: grey;
+}
+.next-button:hover{
+    background-color: grey;
+}
+.banner-item {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 .article-title{
     display: flex;
     flex-direction: column;
@@ -83,7 +113,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-#picture-review{
+.banner-item{
     border-radius: 10px;
     width: 380px;
 }
