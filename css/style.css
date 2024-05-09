@@ -39,14 +39,14 @@ body{
 .navigation-container>nav>button:hover{
     background-color: grey;
 }
-.navigation-container>nav>#button-home{
-    border-radius:4px 0px 0px 4px;
+.navigation-container>nav button:nth-child(1) {
+    border-radius: 4px 0px 0px 4px;
 }
-.navigation-container>nav>#button-our-package{
-    border-radius:0px;
+.navigation-container>nav button {
+    border-radius: 0px;
 }
-.navigation-container>nav>#button-call-us{
-    border-radius:0px 4px 4px 0px;
+.navigation-container>nav button:nth-child(3) {
+    border-radius: 0px 4px 4px 0px;
 }
 .core-picture{
     display: flex;
