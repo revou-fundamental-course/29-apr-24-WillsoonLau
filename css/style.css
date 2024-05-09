@@ -3,98 +3,93 @@
     src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
 }
 
-main,
-footer{
-    display: flex;
-    justify-content: center;
-}
-body{
+body {
     font-family: 'Font';
     font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
-.content-container{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.navigation-container{
+
+.navigation-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 45px;
     margin-right: 45px;
 }
-.navigation-container>#logo{
+
+#logo {
     border-radius: 25px;
     height: 50px;
     width: 50px;
 }
-.navigation-container>nav>button{
-    width:90px;
-    height:30px;
-    margin:-1px;
-    font-size: 12px;
-    transition: background-color 0.5s ease;
-}
-.navigation-container>nav>button:hover{
-    background-color: grey;
-}
-.navigation-container>nav button:nth-child(1) {
-    border-radius: 4px 0px 0px 4px;
-}
-.navigation-container>nav button {
-    border-radius: 0px;
-}
-.navigation-container>nav button:nth-child(3) {
-    border-radius: 0px 4px 4px 0px;
-}
+
 .core-picture{
-    display: flex;
+    display : flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.next-button {
-    border-color: white;
-    background-color: white;
-    border-radius: 4px;
+
+.navigation-container nav button {
+    width: 90px;
+    height: 30px;
+    margin: -1px;
+    font-size: 12px;
     transition: background-color 0.5s ease;
 }
-.prev-button {
-    border-color: white;
-    background-color: white;
-    border-radius: 4px;
-    transition: background-color 0.5s ease;
-}
-.prev-button:hover{
+
+.navigation-container nav button:hover {
     background-color: grey;
 }
-.next-button:hover{
-    background-color: grey;
+
+.navigation-container nav button:nth-child(1) {
+    border-radius: 4px 0px 0px 4px;
 }
+
+.navigation-container nav button {
+    border-radius: 0px;
+}
+
+.navigation-container nav button:nth-child(3) {
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* Banner */
 .banner-item {
     height: 200px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
-.article-title{
+
+/* Content Layout */
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.article-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 60px;
 }
-.article-title p{
+
+.article-title p {
     margin: 0;
     font-size: 25px;
 }
-#title-description{
+
+#title-description {
     color: grey;
     font-size: 14px;
     margin-top: 30px;
 }
-.article-core{
+
+.article-core {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
@@ -102,41 +97,48 @@ body{
     margin-left: 30px;
     max-width: 1000px;
 }
-.image-container{
+
+.image-container {
     width: 500px;
     margin-bottom: 20px;
 }
-.image-display{
+
+.image-display {
     flex: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.banner-item{
+
+.banner-item {
     border-radius: 10px;
     width: 380px;
 }
-.form-container{
-    flex : 40%;
-} 
-.form-display{
+
+.form-container {
+    flex: 40%;
+}
+
+.form-display {
     width: 250px;
     background-color: #edf0f4;
     border-radius: 10px;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 20px;
 }
-#name-input, #email-input, #option-input{
+
+#name-input,
+#email-input,
+#option-input {
     margin-bottom: 20px;
     background-color: #f0f0f0;
     width: 210px;
     height: 35px;
     border-radius: 4px;
+    padding: 5px;
 }
-#button-form{
+
+#button-form {
     color: white;
     background-color: #29323d;
     border-radius: 4px;
@@ -144,62 +146,74 @@ body{
     height: 40px;
     font-size: 12px;
 }
-#profile-picture{
+
+#profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 20px;
 }
-.review{
-    display:flex;
+
+.review {
+    display: flex;
     flex-direction: row;
 }
-.review-profile{
-    display:flex;
+
+.review-profile {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
 }
-.review-profile>p{
+
+.review-profile>p {
     margin: 0;
 }
+
 .review-text,
-#text{
+#text {
     color: #798da3;
 }
-.offer-information{
+
+.offer-information {
     margin-top: 20px;
 }
-.offer-information-text{
+
+.offer-information-text {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
 }
-.offer-information>p{
+
+.offer-information>p {
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-.number-text{
+
+.number-text {
     display: flex;
     flex-direction: row;
 }
-.numbering{
+
+.numbering {
     display: flex;
     flex-direction: column;
     flex: 10%;
 }
-.number-text>.text{
-    display:flex;
+
+.number-text>.text {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 90%;
     font-size: 13px;
-
 }
-.numbering>p{
+
+.numbering>p {
     font-size: 12px;
     margin: 6px;
 }
+
 .circle {
     display: inline-block;
     width: 30px;
@@ -210,93 +224,67 @@ body{
     text-align: center;
     line-height: 30px;
 }
-.our-package{
+
+.our-package {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #edf0f4;
     height: 150px;
 }
-.our-package>p{
+
+.our-package>p {
     font-size: 20px;
 }
-.package{
+
+.package {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
-.package-row-1{
+
+.package-row-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 75px;
 }
-.package-row-2{
+
+.package-row-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 75px;
 }
-.bali{
+
+.bali,
+.japan,
+.singapore,
+.bandung,
+.surabaya,
+.third-feature {
     display: flex;
     flex-direction: row;
 }
-.bali>.image-contain{
+
+.bali>.image-contain,
+.japan>.image-contain,
+.singapore>.image-contain,
+.bandung>.image-contain,
+.surabaya>.image-contain,
+.third-feature>.image-contain {
     display: flex;
     align-items: center;
     margin-right: 15px;
 }
-.japan{
-    display: flex;
-    flex-direction: row;
-}
-.japan>.image-contain{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-.singapore{
-    display: flex;
-    flex-direction: row;
-}
-.singapore>.image-contain{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-.bandung{
-    display: flex;
-    flex-direction: row;
-}
-.bandung>.image-contain{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-.surabaya{
-    display: flex;
-    flex-direction: row;
-}
-.surabaya>.image-contain{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-.third-feature{
-    display: flex;
-    flex-direction: row;
-}
-.third-feature>.image-contain{
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-}
-.package-description>p{
+
+.package-description>p {
     margin: 0;
 }
-.closing-argument{
+
+.closing-argument {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -305,7 +293,8 @@ body{
     align-items: center;
     text-align: center;
 }
-#button-call-to-action{
+
+#button-call-to-action {
     color: white;
     background-color: #29323d;
     border-radius: 3px;
@@ -313,37 +302,76 @@ body{
     height: 40px;
     font-size: 12px;
 }
-div>#logo{
-    border-radius: 25px;
-    height: 50px;
-    width: 50px;
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
 }
-.footer-end{
+
+.footer-end {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.copyright-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+
+.footer-end>p {
+    margin: 0;
 }
-.copyright-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.footer-end a {
+    text-decoration: none;
+    color: inherit;
 }
-.copyright-1>p{
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 2px;
-}
-.copyright-2>p{
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 2px;
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .content-container {
+        padding: 0 10px;
+    }
+
+    .article-core {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .form-display {
+        width: 100%;
+    }
+
+    .navigation-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navigation-container>#logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .navigation-container nav button {
+        width: 70px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .banner-item {
+        width: 300px;
+        height: 150px;
+    }
+
+    .package-row-1,
+    .package-row-2 {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .package-description {
+        text-align: center;
+    }
 }
